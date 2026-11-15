@@ -1,0 +1,23 @@
+{
+  "name": "@zk-age/sdk",
+  "version": "1.0.0",
+  "description": "TypeScript SDK for Zero-Knowledge Age Verification and Scoped Nullifiers",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "zero-knowledge",
+    "zk-snark",
+    "groth16",
+    "circom",
+    "age-verification",
+    "bn254"
+  ],
+  "author": "Zero-Knowledge Age Verification Team",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
