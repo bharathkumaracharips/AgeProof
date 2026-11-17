@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ZK-Age | Privacy-Preserving Zero-Knowledge Age Verification",
+  title: "AgeProof | Zero-Knowledge Age Eligibility Verification",
   description: "Prove eligibility for age-restricted services without revealing an exact birth date using Groth16 and Poseidon Nullifiers on EVM",
 };
 
@@ -18,10 +18,10 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-purple-600 to-indigo-500 flex items-center justify-center text-white font-black text-lg shadow-lg shadow-purple-500/20">
-                ZK
+                AP
               </div>
               <div>
-                <span className="font-bold text-lg text-white tracking-tight">ZK-Age Protocol</span>
+                <span className="font-bold text-lg text-white tracking-tight">AgeProof</span>
                 <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 font-mono">
                   Groth16 • BN254
                 </span>
@@ -37,7 +37,7 @@ export default function RootLayout({
         </header>
         <main>{children}</main>
         <footer className="border-t border-slate-800/80 py-8 text-center text-xs text-slate-500">
-          ZK-Age Verification Protocol • Groth16 BN254 SNARKs • Scoped Poseidon Nullifiers • EVM Testnet
+          AgeProof Protocol • Zero-Knowledge Age Eligibility Verification • Groth16 BN254 SNARKs • EVM Testnet
         </footer>
       </body>
     </html>

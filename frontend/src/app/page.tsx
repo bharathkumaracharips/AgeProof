@@ -167,9 +167,9 @@ export default function Home() {
       <div className="mb-8 p-6 rounded-2xl bg-gradient-to-r from-purple-900/30 via-indigo-900/20 to-slate-900 border border-purple-500/20 shadow-xl">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div>
-            <h1 className="text-3xl font-extrabold text-white tracking-tight">Zero-Knowledge Age Verification</h1>
+            <h1 className="text-3xl font-extrabold text-white tracking-tight">AgeProof</h1>
             <p className="text-slate-400 mt-1 text-sm">
-              Prove age eligibility ($\ge 13, 16, 18, 21$) for restricted services without revealing an exact birth date or real-world ID.
+              Zero-Knowledge Age Eligibility Verification ($\ge 13, 16, 18, 21$) for restricted services without revealing an exact birth date or real-world ID.
             </p>
           </div>
           <div className="flex items-center gap-2">

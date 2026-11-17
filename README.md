@@ -1,4 +1,4 @@
-# Zero-Knowledge Age Verification Platform (`zk-age-verification`)
+# AgeProof: Zero-Knowledge Age Eligibility Verification
 
 ![Groth16 BN254](https://img.shields.io/badge/ZK--SNARK-Groth16%20%7C%20BN254-purple?style=for-the-badge)
 ![Circom](https://img.shields.io/badge/Circuit-Circom%202.1-yellow?style=for-the-badge)
@@ -46,7 +46,7 @@ Prove eligibility for age-restricted services ($\ge 13, 16, 18, 21$) **without r
 ## 2. Directory Structure
 
 ```
-zk-age-verification/
+AgeProof/
 ├── circuits/                   # Circom ZK circuits & R1CS templates
 │   ├── AgeVerification.circom  # Master Groth16 circuit for age verification
 │   ├── DateComparison.circom   # Calendar arithmetic & integer range comparison
@@ -97,21 +97,21 @@ $$\text{Nullifier} = \text{Poseidon}(\text{holderSecret}, \text{verifierScope}, 
 
 ### 4.1 Smart Contracts (Foundry)
 ```bash
-cd zk-age-verification/contracts
+cd contracts
 forge test
 forge script script/Deploy.s.sol --broadcast
 ```
 
 ### 4.2 Rust Backend API
 ```bash
-cd zk-age-verification/backend
+cd backend
 cargo run -p server
 # API available at http://localhost:8081
 ```
 
 ### 4.3 Next.js Frontend
 ```bash
-cd zk-age-verification/frontend
+cd frontend
 npm install
 npm run dev
 # Open http://localhost:3000 to launch the ZK Prover and Verifier Portal
